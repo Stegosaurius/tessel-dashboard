@@ -1,0 +1,24 @@
+{
+  "name": "tessel_dash",
+  "main": "index.html",
+  "version": "0.0.2",
+  "homepage": "https://github.com/keen/dashboards",
+  "description": "awesoelll",
+  "moduleType": [],
+  "keywords": [
+    "adkdkf"
+  ],
+  "authors": [
+    "beasta"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/lib",
+    "test",
+    "tests"
+  ]
+}
