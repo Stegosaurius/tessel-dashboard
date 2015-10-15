@@ -1,0 +1,11 @@
+{
+  "name": "tess_dash",
+  "version": "0.0.2",
+  "description": "awesoemness",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
+}
