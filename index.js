@@ -2,7 +2,7 @@
 var Keen = require('keen.io');
 var wifi = require('wifi-cc3000');
 var keenConfigure = require('./assets/js/keenConfigure.js');
-var wifiSettings = {ssid: 'Hack Reactor', password:'scriptstick'};
+var wifiSettings = {ssid: 'Hack Reactor', password:'awesomebullets'};
  
 // var keen = keenConfigure;
 var keen = Keen.configure(keenConfigure);
@@ -138,14 +138,7 @@ function sendSoundTrigger(data){
     console.log("added Sound event");
   });
 }
- 
-// wifi.on('disconnect', function(){
-//   console.log("disconnected, trying to reconnect");
-//   wifi.connect({
-//     ssid: 'Hack Reactor',
-//     password:'awesomebullets'
-//   });
-// });
+
 wifi.on('connect', function() {
   console.log('Tessel is connected to wifi');
 });
