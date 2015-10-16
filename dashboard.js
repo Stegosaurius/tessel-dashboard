@@ -8,7 +8,46 @@ Keen.ready(
   // setInterval(
     function(){
 
+  // ----------------------------------------
+  // Humidity Level Timeline
+  // ----------------------------------------
+  var humidityLevel_timeline = new Keen.Query("average", {
+   eventCollection: "climate",
+    targetProperty: "humidity",
+    interval: "minutely",
+    // timeframe: {
+    //   start: "2014-10-06T07:00:00.000",
+    //   end: "2014-10-06T19:00:00.000"
+    // }
+    timeframe: "today"
+  });
 
+  client.draw(lightLevel_timeline, document.getElementById("chart-09"), {
+    chartType: "linechart",
+    title: "Minutely Humidity Level",
+    height: 250,
+    width: "auto"
+  });
+  // ----------------------------------------
+  // Temperature Level Timeline
+  // ----------------------------------------
+  var tempLevel_timeline = new Keen.Query("average", {
+   eventCollection: "climate",
+    targetProperty: "temp",
+    interval: "minutely",
+    // timeframe: {
+    //   start: "2014-10-06T07:00:00.000",
+    //   end: "2014-10-06T19:00:00.000"
+    // }
+    timeframe: "today"
+  });
+
+  client.draw(tempLevel_timeline, document.getElementById("chart-10"), {
+    chartType: "linechart",
+    title: "Minutely temperature Level",
+    height: 250,
+    width: "auto"
+  });
 
   // ----------------------------------------
   // Light Level Timeline
@@ -26,7 +65,7 @@ Keen.ready(
 
   client.draw(lightLevel_timeline, document.getElementById("chart-08"), {
     chartType: "linechart",
-    title: "Minutely Sound Level",
+    title: "Minutely Light Level",
     height: 250,
     width: "auto"
   });
@@ -35,7 +74,7 @@ Keen.ready(
   // ----------------------------------------
   var soundLevel_timeline = new Keen.Query("average", {
    eventCollection: "climate",
-    targetProperty: "temp",
+    targetProperty: "sound",
     interval: "minutely",
     // timeframe: {
     //   start: "2014-10-06T07:00:00.000",
