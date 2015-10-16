@@ -7,5 +7,13 @@
     "test": "test"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "ambient-attx4": "^0.2.5",
+    "climate-si7020": "^0.1.1",
+    "holder": "0.0.0",
+    "jquery-knob": "^1.2.11",
+    "keen-js": "^3.2.7",
+    "keen.io": "^0.1.3"
+  }
 }
