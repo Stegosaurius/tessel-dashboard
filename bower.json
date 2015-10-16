@@ -22,6 +22,10 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.3.5"
+    "bootstrap": "~3.3.5",
+    "holderjs": "~2.8.2",
+    "jquery": "~2.1.4",
+    "keen-js": "~3.2.7",
+    "jquery-knob": "jquery-knob#~1.2.11"
   }
 }
