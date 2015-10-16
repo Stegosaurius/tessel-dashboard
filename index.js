@@ -21,7 +21,7 @@ var ambientlib = require('ambient-attx4');
 var climate = climatelib.use(tessel.port.A);
 var ambient = ambientlib.use(tessel.port.D);
 
-var THLSinterval = 10; //update interval for temperature, humidty, light and sound
+var THLSinterval = 60; //update interval for temperature, humidty, light and sound
 var soundTriggerLevel = 0.1;
 var lightTriggerLevel = 0.5;
 var led1 = tessel.led[0].output(0);
