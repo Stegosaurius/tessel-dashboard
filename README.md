@@ -3,4 +3,4 @@ Tessel program that collects climate and sensor data and sends to keen.io, inclu
 Run live-server to try it out.
 
 
-To make functional, you'll need to add your keen.io to the files in assets/js/
+To make functional, you'll need to add your api keys to from keen.io to the files in assets/js/
